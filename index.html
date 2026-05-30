@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facultad de Ciencias - UABC Ensenada</title>
+    <meta name="description"
+        content="Sitio web oficial de la Facultad de Ciencias de la Universidad Autónoma de Baja California, Campus Ensenada.">
+    <link rel="icon" href="fcloog.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Top Utility Bar -->
+    <!-- <div class="top-bar">
+        <div class="container">
+            <div> Ensenada, Baja California, México | +52 (646) 152 8211</div>
+            <div class="top-bar-links">
+                <a href="#contacto">Contacto</a>
+                <a href="#" style="font-weight: 700; color: var(--accent-color);">ES</a>
+                <a href="#" style="opacity: 0.7;">EN</a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Header & Navigation -->
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="main-nav">
+                <!-- Brand section with logos -->
+                <a href="index.html" class="brand-section" id="logo-link">
+                    <div class="brand-logos">
+                        <img src="fcloog.png" alt="Logo Facultad de Ciencias" class="fc-logo" id="fc-logo-img">
+                    </div>
+                    <div class="brand-text">
+                        <h1>Universidad Autónoma de Baja California</h1>
+                        <p><b> Facultad de Ciencias</b></p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="nav-links" id="navLinks">
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#nosotros" class="nav-link">Conócenos</a>
+                        <div class="dropdown-menu">
+                            <a href="#nosotros" class="dropdown-item">Historia</a>
+                            <a href="#nosotros" class="dropdown-item">Misión y Visión</a>
+                            <a href="#nosotros" class="dropdown-item">Directorio Administrativo</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#carreras" class="nav-link">Licenciaturas</a>
+                        <div class="dropdown-menu">
+                            <a href="biologia.html" class="dropdown-item">Biología</a>
+                            <a href="computacion.html" class="dropdown-item">Ciencias Computacionales</a>
+                            <a href="fisica.html" class="dropdown-item">Física</a>
+                            <a href="matematicas.html" class="dropdown-item">Matemáticas Aplicadas</a>
+                            <a href="datos.html" class="dropdown-item">Ciencia de Datos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#posgrados" class="nav-link">Posgrados</a>
+                        <div class="dropdown-menu">
+                            <a href="https://www.mezauabc.com/" target="_blank" class="dropdown-item">M. en Ecología
+                                Molecular y Biotecnología</a>
+                            <a href="http://fcm.ens.uabc.mx/posgrado/gestion-ambiental-especialidad.php" target="_blank"
+                                class="dropdown-item">Esp. en Gestión Ambiental</a>
+                            <a href="https://www.mydciuabc.com/" target="_blank" class="dropdown-item">M. y Dr. en
+                                Ciencias e Ingeniería (MyDCI)</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#investigacion" class="nav-link">Investigación</a>
+                        <div class="dropdown-menu">
+                            <a href="#investigacion" class="dropdown-item">Indicadores de Calidad</a>
+                            <a href="#investigacion" class="dropdown-item">Cuerpos Académicos</a>
+                            <a href="#investigacion" class="dropdown-item">Proyectos Activos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#alumnos" class="nav-link">Alumnos</a>
+                        <div class="dropdown-menu">
+                            <a href="#alumnos" class="dropdown-item">Horarios de Clase</a>
+                            <a href="#alumnos" class="dropdown-item">Servicio Social</a>
+                            <a href="#alumnos" class="dropdown-item">Modalidades de Aprendizaje (OMA)</a>
+                            <a href="#alumnos" class="dropdown-item">Proceso de Titulación</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#recursos" class="nav-link">Recursos</a>
+                        <div class="dropdown-menu">
+                            <a href="#recursos" class="dropdown-item">Manuales de Laboratorio</a>
+                            <a href="#recursos" class="dropdown-item">Libros Publicados</a>
+                            <a href="#recursos" class="dropdown-item">Reglamentos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#recursos" class="nav-link">Servicios</a>
+                        <div class="dropdown-menu">
+                            <a href="#recursos" class="dropdown-item">Visitas</a>
+                            <a href="#recursos" class="dropdown-item">Presentación de Servicios</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero-slider" id="hero-slider-section">
+        <div class="slider-container" id="sliderContainer">
+            <!-- Slide 1: Welcome -->
+            <div class="slide">
+                <img src="carrusel.png" alt="Facultad de Ciencias Campus Ensenada">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <span class="slide-tag">Admisiones Abiertas</span>
+                        <h2>Diseña el futuro de la ciencia y tecnología</h2>
+                        <p>Únete a una de las comunidades científicas más destacadas del noroeste de México. Excelencia
+                            académica, investigación y laboratorios de vanguardia.</p>
+                        <a href="#carreras" class="btn">Explorar Carreras</a>
+                        <a href="#nosotros" class="btn btn-secondary">Conócenos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Induction Course -->
+            <div class="slide">
+                <img src="carrusel.png" alt="Alumnos Facultad de Ciencias">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <span class="slide-tag">Nuevo Ingreso</span>
+                        <h2>Curso de Inducción 2026-1</h2>
+                        <p>Te damos la bienvenida a tu nueva etapa académica. Consulta las fechas y requisitos
+                            obligatorios para estudiantes de nuevo ingreso.</p>
+                        <a href="#noticias" class="btn">Ver Fechas</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Peace Campaign -->
+            <div class="slide">
+                <img src="carrusel.png" alt="UABC Institucional">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <span class="slide-tag">Cultura de Paz</span>
+                        <h2>Cero Tolerancia a la Violencia</h2>
+                        <p>En la UABC fomentamos un ambiente seguro, de respeto e inclusión para toda nuestra comunidad
+                            estudiantil y académica.</p>
+                        <a href="https://www.uabc.mx/wp-content/uploads/bsk-pdf-manager/2023/10/Programa-Institucional-para-la-Cultura-de-Paz-UABC_.pdf"
+                            target="_blank" class="btn">Ver Protocolos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="slider-btn slider-prev" id="sliderPrev">❮</button>
+        <button class="slider-btn slider-next" id="sliderNext">❯</button>
+
+        <!-- Navigation Dots -->
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- Slogan Bar -->
+    <div class="slogan-bar">
+        "Por la realización plena del ser" <span>Mi destino es la cima</span>
+    </div>
+
+    <!-- Academic Programs Section (Enrollment Target) -->
+    <section class="section-programs" id="carreras">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Oferta Educativa</span>
+                <h2 class="section-title">Licenciaturas de Vanguardia</h2>
+            </div>
+
+            <div class="programs-grid">
+                <!-- Biology -->
+                <div class="program-card">
+                    <div class="program-icon-wrapper">
+                        <!-- Custom Biological DNA/Leaf SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                    </div>
+                    <h3>Biología</h3>
+                    <p>Estudia la vida, biodiversidad, ecología y biotecnología. Desarrolla proyectos de conservación y
+                        gestión de recursos costeros y terrestres.</p>
+                    <a href="biologia.html" class="btn-text">Ver Plan de Estudios →</a>
+                </div>
+
+                <!-- Computer Science -->
+                <div class="program-card">
+                    <div class="program-icon-wrapper">
+                        <!-- Custom Computer/Code SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
+                        </svg>
+                    </div>
+                    <h3>Ciencias Computacionales</h3>
+                    <p>Domina el desarrollo de software de alta calidad, la infraestructura de redes y la simulación
+                        científica de fenómenos complejos.</p>
+                    <a href="computacion.html" class="btn-text">Ver Plan de Estudios →</a>
+                </div>
+
+                <!-- Physics -->
+                <div class="program-card">
+                    <div class="program-icon-wrapper">
+                        <!-- Custom Physics/Atom SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
+                            <ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(45 12 12)" />
+                            <ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(-45 12 12)" />
+                        </svg>
+                    </div>
+                    <h3>Física</h3>
+                    <p>Explora las leyes fundamentales del universo. Prepárate para resolver retos en nanotecnología,
+                        astronomía y física médica.</p>
+                    <a href="fisica.html" class="btn-text">Ver Plan de Estudios →</a>
+                </div>
+
+                <!-- Applied Mathematics -->
+                <div class="program-card">
+                    <div class="program-icon-wrapper">
+                        <!-- Custom Mathematics Sigma SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M6 4v2h5.46l-4.52 7.02c-.34.53-.34 1.2 0 1.73L10.33 20H6v2h12v-2h-5.46l4.52-7.02c.34-.53.34-1.2 0-1.73L13.67 4H18V2H6v2z" />
+                        </svg>
+                    </div>
+                    <h3>Matemáticas Aplicadas</h3>
+                    <p>El único programa en la región enfocado en modelar procesos industriales, control de calidad,
+                        finanzas y consultoría estadística.</p>
+                    <a href="matematicas.html" class="btn-text">Ver Plan de Estudios →</a>
+                </div>
+
+                <!-- Data Science -->
+                <div class="program-card">
+                    <div class="program-icon-wrapper">
+                        <!-- Custom Data Science Trend/Database SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5zm0 2c4.4 0 8 1.8 8 3s-3.6 3-8 3-8-1.8-8-3 3.6-3 8-3zm-8 6c0 1.2 3.6 3 8 3s8-1.8 8-3v2c0 1.2-3.6 3-8 3s-8-1.8-8-3v-2zm0 4c0 1.2 3.6 3 8 3s8-1.8 8-3v2c0 1.2-3.6 3-8 3s-8-1.8-8-3v-2z" />
+                        </svg>
+                    </div>
+                    <h3>Ciencia de Datos</h3>
+                    <p>Aprende a analizar grandes volúmenes de datos, desarrollar modelos predictivos y extraer patrones
+                        para la toma de decisiones empresariales.</p>
+                    <a href="datos.html" class="btn-text">Ver Plan de Estudios →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-content">
+                    <h2>¿Listo para impulsar tu vocación científica?</h2>
+                    <p>Consulta la convocatoria oficial de ingreso de la UABC y prepárate para formar parte de la
+                        Facultad de Ciencias en el próximo ciclo.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="http://cgsege.uabc.mx" target="_blank" class="btn">Proceso de Admisión →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="section-news-events" id="noticias">
+        <div class="container">
+            <div class="news-events-grid">
+                <!-- News Column -->
+                <div>
+                    <h3
+                        style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 2rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem;">
+                        Noticias y Avisos
+                    </h3>
+
+                    <div class="news-list">
+                        <!-- News 1 -->
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="carrusel.png" alt="Inducción">
+                            </div>
+                            <div class="news-body">
+                                <span class="news-date">mayo 23, 2026</span>
+                                <h4>Curso de Inducción 2026-1</h4>
+                                <p class="news-excerpt">Se informa a todos los alumnos de nuevo ingreso que las fechas
+                                    del curso de inducción obligatorio se han publicado. Asistencia requerida.</p>
+                                <a href="#" class="news-link">Leer más →</a>
+                            </div>
+                        </div>
+
+                        <!-- News 2 -->
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="carrusel.png" alt="Convocatoria Profesor">
+                            </div>
+                            <div class="news-body">
+                                <span class="news-date">mayo 28, 2026</span>
+                                <h4>Plazas de Profesor/a de Tiempo Completo</h4>
+                                <p class="news-excerpt">Convocatoria pública para ocupar plazas de profesor-investigador
+                                    en las áreas de biología y ciencias de datos en Ensenada, B.C.</p>
+                                <a href="#" class="news-link">Leer más →</a>
+                            </div>
+                        </div>
+
+                        <!-- News 3 -->
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="carrusel.png" alt="Matemáticas">
+                            </div>
+                            <div class="news-body">
+                                <span class="news-date">mayo 26, 2026</span>
+                                <h4>Mención Honorífica en Competencia de Matemáticas</h4>
+                                <p class="news-excerpt">Un destacado alumno de la licenciatura en Matemáticas Aplicadas
+                                    obtuvo un reconocimiento internacional de excelencia en matemáticas.</p>
+                                <a href="#" class="news-link">Leer más →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Sidebar -->
+                <div class="events-panel">
+                    <h3>Próximos Eventos</h3>
+
+                    <div class="event-item">
+                        <div class="event-date-box">
+                            <span class="event-month">Ago</span>
+                            <span class="event-day">11</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Inicio de Posgrados de la Salud</h4>
+                            <span class="event-time">11 de Agosto, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date-box">
+                            <span class="event-month">Ago</span>
+                            <span class="event-day">11</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Maestría en Proyectos Sociales 2025-2027</h4>
+                            <span class="event-time">11 de Agosto, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date-box">
+                            <span class="event-month">Ago</span>
+                            <span class="event-day">11</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Maestría en Ciencias Médicas</h4>
+                            <span class="event-time">11 de Agosto, 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Calendar Placeholders -->
+                    <div
+                        style="margin-top: 2rem; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?src=c_1d7f4e2f13a95999832a102148d23da3c765482bb9d0b1cf932b0a4d82a8c1bb%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                            style="border: 0" width="100%" height="220" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Stages / Procedures Section (Alumnos / Trámites) -->
+    <section class="section-stages" id="alumnos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trámites Escolares</span>
+                <h2 class="section-title">El Camino del Estudiante</h2>
+            </div>
+
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="tab-disciplinaria">Etapa Disciplinaria</button>
+                <button class="tab-btn" data-tab="tab-terminal">Etapa Terminal</button>
+                <button class="tab-btn" data-tab="tab-egreso">Trámites de Egreso</button>
+            </div>
+
+            <!-- Disciplinaria Tab -->
+            <div class="tab-content active" id="tab-disciplinaria">
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <h3>Servicio Social Profesional (SSP)</h3>
+                        <p>Requisito para iniciar al cubrir el <strong>60% de los créditos</strong> de tu carrera. Debes
+                            asignarte a un programa antes de cubrir el 85% de los créditos.</p>
+                        <ul class="stage-list">
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/ssocial/CRA_SSP.docx">Carta Responsiva
+                                    Alumno (SSP)</a></li>
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/ssocial/CRUR_SSP.docx">Carta Responsiva
+                                    Unidad Receptora</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-card">
+                        <h3>Ayudantías de Docencia e Investigación</h3>
+                        <p>Participa directamente apoyando en proyectos de investigación o docencia tras haber
+                            acreditado la etapa básica de tu carrera.</p>
+                        <ul class="stage-list">
+                            <li>Máximo 2 ayudantías durante la carrera.</li>
+                            <li>Asignación directa con coordinadores de programa.</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-card">
+                        <h3>Otras Modalidades de Aprendizaje (OMA)</h3>
+                        <p>Acredita créditos obligatorios a través de proyectos de vinculación y actividades de
+                            aprendizaje flexibles fuera del aula.</p>
+                        <ul class="stage-list">
+                            <li><a
+                                    href="https://ciencias.ens.uabc.mx/documentos/omas/formato-modalidades-aprendizaje.docx">Descargar
+                                    Formato de Registro OMA</a></li>
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/vinculacion/omas/Modalidades_de_Aprendizaje_2021.pdf"
+                                    target="_blank">Guía Completa de OMA (PDF)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal Tab -->
+            <div class="tab-content" id="tab-terminal">
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <h3>Prácticas Profesionales (PP)</h3>
+                        <p>Para asignarse se debe haber cubierto el <strong>70% de créditos totales</strong> y tener
+                            liberada la primera etapa de servicio social comunitario.</p>
+                        <ul class="stage-list">
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/vinculacion/omas/CRP_PP_Alumno.docx">Carta
+                                    Responsiva de Prácticas</a></li>
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/vinculacion/practicas/Platica_Practicas_Profesionales_2022-2.pdf"
+                                    target="_blank">Ver Presentación Informativa (PDF)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-card">
+                        <h3>Seguro Facultativo</h3>
+                        <p>Es un requisito indispensable para realizar tus prácticas profesionales o actividades de
+                            campo contar con tu afiliación al IMSS activa.</p>
+                        <ul class="stage-list">
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/vinculacion/omas/SF%2001%2007%202021.pdf"
+                                    target="_blank">Guía para el alta del Seguro (PDF)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Egreso Tab -->
+            <div class="tab-content" id="tab-egreso">
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <h3>1. Historial en Ceros</h3>
+                        <p>Haber acreditado el 100% de las asignaturas obligatorias y optativas de tu plan de estudios
+                            en el sistema escolar de la UABC.</p>
+                    </div>
+
+                    <div class="stage-card">
+                        <h3>2. Certificados de Pasante</h3>
+                        <p>Trámite realizado en el Departamento de Servicios Estudiantiles tras contar con tu historial
+                            en ceros. Permite tramitar el título.</p>
+                        <ul class="stage-list">
+                            <li>Certificado de Pasante</li>
+                            <li>Certificado de Estudios Profesionales</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-card">
+                        <h3>3. Trámite de Título</h3>
+                        <p>Integración del expediente en la Coordinación de Extensión y Vinculación (CEV) de la Facultad
+                            de Ciencias para la obtención del Título Profesional.</p>
+                        <ul class="stage-list">
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/titulacion/RTIT.pdf"
+                                    target="_blank">Requisitos de Titulación (PDF)</a></li>
+                            <li><a href="https://ciencias.ens.uabc.mx/documentos/titulacion/TIT2.pdf"
+                                    target="_blank">Guía del Proceso de Egreso (PDF)</a></li>
+                            <li><a href="http://cgsege.uabc.mx/web/cgsege/tramite-unico-de-titulacion"
+                                    target="_blank">Portal de Trámite Único (TUT)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional / Faculty About Section -->
+    <section class="section-news-events" id="nosotros" style="background-color: white;">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h3
+                        style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem;">
+                        Nuestra Facultad
+                    </h3>
+                    <p>Fundada el <strong>21 de junio de 1977</strong> como la <em>Escuela Superior de Ciencias
+                            Biológicas</em>, la Facultad de Ciencias ha crecido hasta convertirse en un referente
+                        nacional de educación científica de excelencia.</p>
+                    <p>Con programas de licenciatura de primer nivel y un núcleo de investigadores pertenecientes al
+                        <strong>Sistema Nacional de Investigadoras e Investigadores (SNII)</strong>, lideramos la
+                        formación de profesionales capaces de transformar su entorno.
+                    </p>
+
+                    <div style="margin-top: 1.5rem;">
+                        <h4
+                            style="font-family: var(--font-title); font-size: 1.1rem; color: var(--primary-color); margin-bottom: 0.5rem; font-weight: 700;">
+                            Misión</h4>
+                        <p style="font-size: 0.9rem;">Formar ciudadanos profesionales con capacidades científicas y
+                            tecnológicas de excelencia global, con un alto sentido ético y de responsabilidad social,
+                            capaces de transferir y aplicar el conocimiento en biología, física, matemáticas aplicadas y
+                            ciencias computacionales.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3
+                        style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem;">
+                        Directorio Administrativo
+                    </h3>
+                    <div class="contact-info-list" style="gap: 0.8rem;">
+                        <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                            <strong style="font-size: 0.85rem; display:block;">Director</strong>
+                            <span style="font-size: 0.85rem; color: var(--text-medium);">Dr. Alberto Leopoldo Morán y
+                                Solares</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display:block;">
+                                direccion.fc@uabc.edu.mx | Ext. 64900</span>
+                        </div>
+                        <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                            <strong style="font-size: 0.85rem; display:block;">Subdirectora</strong>
+                            <span style="font-size: 0.85rem; color: var(--text-medium);">Dra. Priscilla Elizabeth
+                                Iglesias Vázquez</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display:block;">
+                                subdirector.fc@uabc.edu.mx | Ext. 64903</span>
+                        </div>
+                        <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                            <strong style="font-size: 0.85rem; display:block;">Administradora</strong>
+                            <span style="font-size: 0.85rem; color: var(--text-medium);">M.A. Jesús Artemisa Serrano
+                                Aispuro</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display:block;">
+                                administracion.fc@uabc.edu.mx | Ext. 64902</span>
+                        </div>
+                        <div>
+                            <strong style="font-size: 0.85rem; display:block;">Coordinadora de Posgrado e
+                                Investigación</strong>
+                            <span style="font-size: 0.85rem; color: var(--text-medium);">Dra. María Victoria Meza
+                                Kubo</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); display:block;">
+                                posgrado.fc@uabc.edu.mx | Ext. 64921</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section-stages" id="recursos" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Biblioteca y Descargas</span>
+                <h2 class="section-title">Recursos de Apoyo</h2>
+            </div>
+
+            <div class="programs-grid">
+                <!-- Lab Manuals -->
+                <div class="program-card">
+                    <h3>Manuales de Laboratorio</h3>
+                    <p>Accede a las guías de práctica de laboratorio oficiales de materias de Biología y Ciencias
+                        Computacionales.</p>
+                    <ul class="stage-list" style="text-align: left; margin-bottom: 1.5rem;">
+                        <li>Manuales de Biología Celular y Morfología</li>
+                        <li>Manuales de Diseño de Algoritmos y Robótica</li>
+                    </ul>
+                    <a href="#" class="btn-text" style="margin-top: auto;">Descargar Manuales →</a>
+                </div>
+
+                <!-- Books -->
+                <div class="program-card">
+                    <h3>Libros Digitales</h3>
+                    <p>Colección de libros y catálogos de investigación publicados por académicos de la Facultad de
+                        Ciencias.</p>
+                    <ul class="stage-list" style="text-align: left; margin-bottom: 1.5rem;">
+                        <li><a href="https://ciencias.ens.uabc.mx/documentos/libros/LibroHumedales.pdf"
+                                target="_blank">Catálogo de Humedales de B.C. (PDF)</a></li>
+                        <li><a href="https://ciencias.ens.uabc.mx/documentos/libros/LibroDunasCosteras.pdf"
+                                target="_blank">Manejo de Dunas Costeras (PDF)</a></li>
+                        <li><a href="https://ciencias.ens.uabc.mx/documentos/libros/LibroValleGuadalupe.pdf"
+                                target="_blank">El Valle de Guadalupe (PDF)</a></li>
+                    </ul>
+                    <a href="#" class="btn-text" style="margin-top: auto;">Ver Catálogo →</a>
+                </div>
+
+                <!-- Regulations -->
+                <div class="program-card">
+                    <h3>Normatividad y Tutorías</h3>
+                    <p>Conoce los reglamentos internos de laboratorio y las guías del programa institucional de tutorías
+                        escolares.</p>
+                    <ul class="stage-list" style="text-align: left; margin-bottom: 1.5rem;">
+                        <li><a href="https://ciencias.ens.uabc.mx/documentos/reglamentos/MANUALDETUTORIAS-FC_20190906.pdf"
+                                target="_blank">Manual de Tutorías UABC (PDF)</a></li>
+                        <li>Políticas de Laboratorio de Cómputo</li>
+                    </ul>
+                    <a href="#" class="btn-text" style="margin-top: auto;">Ver Reglamentos →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section-contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ubicación y Horarios</span>
+                <h2 class="section-title">Ponte en Contacto</h2>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Details -->
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <!-- <div class="contact-info-icon">📍</div> -->
+                        <div class="contact-info-text">
+                            <h4>Dirección</h4>
+                            <p>Carretera Transpeninsular Ensenada - Tijuana No. 3917, Colonia Playitas C.P. 22860,
+                                Ensenada, B.C., México.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <!-- <div class="contact-info-icon">📞</div> -->
+                        <div class="contact-info-text">
+                            <h4>Teléfono</h4>
+                            <p>+52 (646) 152 8211 | Horario administrativo: 8:00 a 18:00 hrs.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <!-- <div class="contact-info-icon">✉️</div> -->
+                        <div class="contact-info-text">
+                            <h4>Correo General</h4>
+                            <p>direccion.fc@uabc.edu.mx</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps?q=Facultad%20de%20Ciencias%20UABC%20Ensenada&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+        <!-- SE Band -->
+        <!-- <div class="footer-top">
+            <div class="container">
+                <p>La Secretaría de Educación del Gobierno del Estado de Baja California garantiza el control pedagógico
+                    de nuestros cursos. Los programas educativos de licenciatura cuentan con acreditaciones nacionales
+                    ante los comités correspondientes.</p>
+            </div>
+        </div> -->
+
+        <!-- Info Band -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="footer-middle-grid">
+                    <div class="footer-middle-col">
+                        <h3>Contacto Ensenada</h3>
+                        <p style="font-size: 0.85rem; line-height: 1.6;">Carretera Transpeninsular Ensenada - Tijuana
+                            No. 3917, Playitas.<br>📞 +52 (646) 152 8211<br>✉️ direccion.fc@uabc.edu.mx</p>
+                    </div>
+                    <div class="footer-middle-col">
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>
+                            <li><a href="#carreras">Nuestras Carreras</a></li>
+                            <li><a href="#alumnos">Servicio Social y OMA</a></li>
+                            <li><a href="https://www.mydciuabc.com/" target="_blank">Portal de Posgrado MyDCI</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle-col">
+                        <h3>Entidades Asociadas</h3>
+                        <ul>
+                            <li><a href="https://fundacionuabc.org/" target="_blank">Fundación UABC, A.C.</a></li>
+                            <li><a href="https://www.uabc.mx/" target="_blank">Portal Central UABC</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright & Social Band -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Todos los derechos reservados | Universidad Autónoma de Baja California | Facultad de Ciencias
+                </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/UABC.FacultaddeCiencias" target="_blank" class="social-link">f</a>
+                    <a href="https://www.instagram.com/uabc_oficial" target="_blank" class="social-link">i</a>
+                    <a href="https://twitter.com/UABC_Oficial" target="_blank" class="social-link">x</a>
+                    <a href="https://mx.linkedin.com/school/uabc/" target="_blank" class="social-link">in</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
