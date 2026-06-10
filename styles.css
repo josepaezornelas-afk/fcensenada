@@ -1021,13 +1021,20 @@ ul {
 .footer-bottom {
     background-color: var(--primary-dark);
     padding: 1.5rem 0;
-    text-align: center;
     font-size: 0.75rem;
+}
+
+.footer-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .footer-bottom p {
     opacity: 0.8;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .social-links {
@@ -1085,6 +1092,13 @@ ul {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 3rem;
+    align-items: start;
+}
+
+/* Sticky sidebar on desktop */
+.sidebar {
+    position: sticky;
+    top: 5rem;
 }
 
 .page-main h2 {
@@ -1247,6 +1261,69 @@ ul {
     color: var(--primary-color);
 }
 
+/* Plan de Estudios Image Block */
+.plan-image-wrapper {
+    margin: 2rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background-color: white;
+}
+
+.plan-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+    cursor: zoom-in;
+}
+
+.plan-image:hover {
+    transform: scale(1.02);
+}
+
+.plan-image-caption {
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Lightbox overlay for plan image */
+.plan-image-wrapper.expanded {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+.plan-image-wrapper.expanded .plan-image {
+    max-height: 90vh;
+    width: auto;
+    max-width: 95vw;
+    transform: none;
+    border-radius: 6px;
+}
+
+.plan-image-wrapper.expanded .plan-image-caption {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.7);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -1338,5 +1415,73 @@ ul {
 
     .page-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Sidebar no longer sticky on mobile */
+    .sidebar {
+        position: static;
+    }
+
+    .program-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .page-header-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .slide-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-slider {
+        height: 320px;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .program-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .tabs-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-btn {
+        border-bottom: 1px solid var(--border-color);
+        text-align: left;
+    }
+
+    .semester-list {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-text h1 {
+        font-size: 0.8rem;
+    }
+
+    .brand-text p {
+        font-size: 0.75rem;
     }
 }

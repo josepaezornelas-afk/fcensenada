@@ -142,4 +142,21 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    // Lightbox for Plan de Estudios image
+    const planImageWrappers = document.querySelectorAll('.plan-image-wrapper');
+
+    planImageWrappers.forEach(wrapper => {
+        wrapper.addEventListener('click', () => {
+            wrapper.classList.toggle('expanded');
+        });
+    });
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            planImageWrappers.forEach(wrapper => {
+                wrapper.classList.remove('expanded');
+            });
+        }
+    });
 });

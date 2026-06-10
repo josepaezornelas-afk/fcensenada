@@ -7,7 +7,7 @@
     <title>Facultad de Ciencias - UABC Ensenada</title>
     <meta name="description"
         content="Sitio web oficial de la Facultad de Ciencias de la Universidad Autónoma de Baja California, Campus Ensenada.">
-    <link rel="icon" href="fcloog.png">
+    <link rel="icon" href="./assets/img/fcloog.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -32,7 +32,8 @@
                 <!-- Brand section with logos -->
                 <a href="index.html" class="brand-section" id="logo-link">
                     <div class="brand-logos">
-                        <img src="fcloog.png" alt="Logo Facultad de Ciencias" class="fc-logo" id="fc-logo-img">
+                        <img src="./assets/img/fcloog.png" alt="Logo Facultad de Ciencias" class="fc-logo"
+                            id="fc-logo-img">
                     </div>
                     <div class="brand-text">
                         <h1>Universidad Autónoma de Baja California</h1>
@@ -56,11 +57,11 @@
                     <div class="nav-item">
                         <a href="#carreras" class="nav-link">Licenciaturas</a>
                         <div class="dropdown-menu">
-                            <a href="biologia.html" class="dropdown-item">Biología</a>
-                            <a href="computacion.html" class="dropdown-item">Ciencias Computacionales</a>
-                            <a href="fisica.html" class="dropdown-item">Física</a>
-                            <a href="matematicas.html" class="dropdown-item">Matemáticas Aplicadas</a>
-                            <a href="datos.html" class="dropdown-item">Ciencia de Datos</a>
+                            <a href="./carreras/biologia.html" class="dropdown-item">Biología</a>
+                            <a href="./carreras/computacion.html" class="dropdown-item">Ciencias Computacionales</a>
+                            <a href="./carreras/fisica.html" class="dropdown-item">Física</a>
+                            <a href="./carreras/matematicas.html" class="dropdown-item">Matemáticas Aplicadas</a>
+                            <a href="./carreras/datos.html" class="dropdown-item">Ciencia de Datos</a>
                         </div>
                     </div>
                     <div class="nav-item">
@@ -103,7 +104,7 @@
                         <a href="#recursos" class="nav-link">Servicios</a>
                         <div class="dropdown-menu">
                             <a href="#recursos" class="dropdown-item">Visitas</a>
-                            <a href="#recursos" class="dropdown-item">Presentación de Servicios</a>
+                            <a href="#recursos" class="dropdown-item">Prestación de Servicios</a>
                         </div>
                     </div>
                 </nav>
@@ -118,7 +119,7 @@
         <div class="slider-container" id="sliderContainer">
             <!-- Slide 1: Welcome -->
             <div class="slide">
-                <img src="carrusel.png" alt="Facultad de Ciencias Campus Ensenada">
+                <img src="./assets/img/carrusel.png" alt="Facultad de Ciencias Campus Ensenada">
                 <div class="slide-overlay">
                     <div class="slide-content">
                         <span class="slide-tag">Admisiones Abiertas</span>
@@ -133,7 +134,7 @@
 
             <!-- Slide 2: Induction Course -->
             <div class="slide">
-                <img src="carrusel.png" alt="Alumnos Facultad de Ciencias">
+                <img src="./assets/img/carrusel.png" alt="Alumnos Facultad de Ciencias">
                 <div class="slide-overlay">
                     <div class="slide-content">
                         <span class="slide-tag">Nuevo Ingreso</span>
@@ -147,7 +148,7 @@
 
             <!-- Slide 3: Peace Campaign -->
             <div class="slide">
-                <img src="carrusel.png" alt="UABC Institucional">
+                <img src="./assets/img/carrusel.png" alt="UABC Institucional">
                 <div class="slide-overlay">
                     <div class="slide-content">
                         <span class="slide-tag">Cultura de Paz</span>
@@ -179,7 +180,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Oferta Educativa</span>
-                <h2 class="section-title">Licenciaturas de Vanguardia</h2>
+                <h2 class="section-title">Conoce nuestras Licenciaturas</h2>
             </div>
 
             <div class="programs-grid">
@@ -187,78 +188,120 @@
                 <div class="program-card">
                     <div class="program-icon-wrapper">
                         <!-- Custom Biological DNA/Leaf SVG -->
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-dna-icon lucide-dna">
+                            <path d="m10 16 1.5 1.5" />
+                            <path d="m14 8-1.5-1.5" />
+                            <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
+                            <path d="m16.5 10.5 1 1" />
+                            <path d="m17 6-2.891-2.891" />
+                            <path d="M2 15c6.667-6 13.333 0 20-6" />
+                            <path d="m20 9 .891.891" />
+                            <path d="M3.109 14.109 4 15" />
+                            <path d="m6.5 12.5 1 1" />
+                            <path d="m7 18 2.891 2.891" />
+                            <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
                         </svg>
                     </div>
                     <h3>Biología</h3>
                     <p>Estudia la vida, biodiversidad, ecología y biotecnología. Desarrolla proyectos de conservación y
                         gestión de recursos costeros y terrestres.</p>
-                    <a href="biologia.html" class="btn-text">Ver Plan de Estudios →</a>
+                    <a href="./carreras/biologia.html" class="btn-text">Ver Plan de Estudios →</a>
                 </div>
 
                 <!-- Computer Science -->
                 <div class="program-card">
                     <div class="program-icon-wrapper">
                         <!-- Custom Computer/Code SVG -->
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-cpu-icon lucide-cpu">
+                            <path d="M12 20v2" />
+                            <path d="M12 2v2" />
+                            <path d="M17 20v2" />
+                            <path d="M17 2v2" />
+                            <path d="M2 12h2" />
+                            <path d="M2 17h2" />
+                            <path d="M2 7h2" />
+                            <path d="M20 12h2" />
+                            <path d="M20 17h2" />
+                            <path d="M20 7h2" />
+                            <path d="M7 20v2" />
+                            <path d="M7 2v2" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <rect x="8" y="8" width="8" height="8" rx="1" />
                         </svg>
                     </div>
                     <h3>Ciencias Computacionales</h3>
                     <p>Domina el desarrollo de software de alta calidad, la infraestructura de redes y la simulación
                         científica de fenómenos complejos.</p>
-                    <a href="computacion.html" class="btn-text">Ver Plan de Estudios →</a>
+                    <a href="./carreras/computacion.html" class="btn-text">Ver Plan de Estudios →</a>
                 </div>
 
                 <!-- Physics -->
                 <div class="program-card">
                     <div class="program-icon-wrapper">
                         <!-- Custom Physics/Atom SVG -->
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-atom-icon lucide-atom">
+                            <circle cx="12" cy="12" r="1" />
                             <path
-                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
-                            <ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(45 12 12)" />
-                            <ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(-45 12 12)" />
+                                d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z" />
+                            <path
+                                d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z" />
                         </svg>
                     </div>
                     <h3>Física</h3>
                     <p>Explora las leyes fundamentales del universo. Prepárate para resolver retos en nanotecnología,
                         astronomía y física médica.</p>
-                    <a href="fisica.html" class="btn-text">Ver Plan de Estudios →</a>
+                    <a href="./carreras/fisica.html" class="btn-text">Ver Plan de Estudios →</a>
                 </div>
 
                 <!-- Applied Mathematics -->
                 <div class="program-card">
                     <div class="program-icon-wrapper">
                         <!-- Custom Mathematics Sigma SVG -->
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M6 4v2h5.46l-4.52 7.02c-.34.53-.34 1.2 0 1.73L10.33 20H6v2h12v-2h-5.46l4.52-7.02c.34-.53.34-1.2 0-1.73L13.67 4H18V2H6v2z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-infinity-icon lucide-infinity">
+                            <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8" />
                         </svg>
                     </div>
                     <h3>Matemáticas Aplicadas</h3>
                     <p>El único programa en la región enfocado en modelar procesos industriales, control de calidad,
                         finanzas y consultoría estadística.</p>
-                    <a href="matematicas.html" class="btn-text">Ver Plan de Estudios →</a>
+                    <a href="./carreras/matematicas.html" class="btn-text">Ver Plan de Estudios →</a>
                 </div>
 
                 <!-- Data Science -->
                 <div class="program-card">
                     <div class="program-icon-wrapper">
                         <!-- Custom Data Science Trend/Database SVG -->
-                        <svg viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-brain-circuit-icon lucide-brain-circuit">
                             <path
-                                d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5zm0 2c4.4 0 8 1.8 8 3s-3.6 3-8 3-8-1.8-8-3 3.6-3 8-3zm-8 6c0 1.2 3.6 3 8 3s8-1.8 8-3v2c0 1.2-3.6 3-8 3s-8-1.8-8-3v-2zm0 4c0 1.2 3.6 3 8 3s8-1.8 8-3v2c0 1.2-3.6 3-8 3s-8-1.8-8-3v-2z" />
+                                d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+                            <path d="M9 13a4.5 4.5 0 0 0 3-4" />
+                            <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                            <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                            <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                            <path d="M12 13h4" />
+                            <path d="M12 18h6a2 2 0 0 1 2 2v1" />
+                            <path d="M12 8h8" />
+                            <path d="M16 8V5a2 2 0 0 1 2-2" />
+                            <circle cx="16" cy="13" r=".5" />
+                            <circle cx="18" cy="3" r=".5" />
+                            <circle cx="20" cy="21" r=".5" />
+                            <circle cx="20" cy="8" r=".5" />
                         </svg>
                     </div>
                     <h3>Ciencia de Datos</h3>
                     <p>Aprende a analizar grandes volúmenes de datos, desarrollar modelos predictivos y extraer patrones
                         para la toma de decisiones empresariales.</p>
-                    <a href="datos.html" class="btn-text">Ver Plan de Estudios →</a>
+                    <a href="./carreras/datos.html" class="btn-text">Ver Plan de Estudios →</a>
                 </div>
             </div>
         </div>
@@ -295,7 +338,7 @@
                         <!-- News 1 -->
                         <div class="news-card">
                             <div class="news-img">
-                                <img src="carrusel.png" alt="Inducción">
+                                <img src="./assets/img/carrusel.png" alt="Inducción">
                             </div>
                             <div class="news-body">
                                 <span class="news-date">mayo 23, 2026</span>
@@ -309,7 +352,7 @@
                         <!-- News 2 -->
                         <div class="news-card">
                             <div class="news-img">
-                                <img src="carrusel.png" alt="Convocatoria Profesor">
+                                <img src="./assets/img/carrusel.png" alt="Convocatoria Profesor">
                             </div>
                             <div class="news-body">
                                 <span class="news-date">mayo 28, 2026</span>
@@ -323,7 +366,7 @@
                         <!-- News 3 -->
                         <div class="news-card">
                             <div class="news-img">
-                                <img src="carrusel.png" alt="Matemáticas">
+                                <img src="./assets/img/carrusel.png" alt="Matemáticas">
                             </div>
                             <div class="news-body">
                                 <span class="news-date">mayo 26, 2026</span>
@@ -691,7 +734,7 @@
                     <div class="footer-middle-col">
                         <h3>Contacto Ensenada</h3>
                         <p style="font-size: 0.85rem; line-height: 1.6;">Carretera Transpeninsular Ensenada - Tijuana
-                            No. 3917, Playitas.<br>📞 +52 (646) 152 8211<br>✉️ direccion.fc@uabc.edu.mx</p>
+                            No. 3917, Playitas.<br> +52 (646) 152 8211<br> direccion.fc@uabc.edu.mx</p>
                     </div>
                     <div class="footer-middle-col">
                         <h3>Enlaces Rápidos</h3>
