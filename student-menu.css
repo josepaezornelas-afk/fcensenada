@@ -1,0 +1,206 @@
+/* Student Vertical Menu */
+.student-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.student-menu-item {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    border-left: 5px solid transparent;
+}
+
+.student-menu-item:hover, .student-menu-item.active {
+    background-color: var(--primary-dark);
+    border-left-color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+.student-menu-item svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--accent-color);
+    fill: none;
+    transition: var(--transition-fast);
+}
+
+.student-menu-item:hover svg, .student-menu-item.active svg {
+    transform: translateX(3px);
+}
+
+.service-content {
+    display: none;
+    animation: fadeIn 0.4s ease-in;
+}
+
+.service-content.active {
+    display: block;
+}
+
+.service-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.service-header h2 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.service-header p {
+    color: var(--text-medium);
+    font-size: 1.1rem;
+}
+
+/* Academic Filters */
+.academic-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.academic-filter-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.academic-filter-btn.active, .academic-filter-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Academic List Layout */
+.academic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.academic-row {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    gap: 2rem;
+    transition: var(--transition-normal);
+}
+
+.academic-row:hover {
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-light);
+}
+
+.academic-row-img {
+    flex-shrink: 0;
+}
+
+.academic-row-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: var(--shadow-sm);
+}
+
+.academic-row-main {
+    flex-grow: 1;
+}
+
+.academic-row-main h3 {
+    margin: 0 0 0.2rem 0;
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+}
+
+.academic-row-main h3 a {
+    color: #1a73e8; /* Blue link style */
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.academic-row-main h3 a:hover {
+    text-decoration: underline;
+    color: var(--primary-dark);
+}
+
+.academic-row-main strong {
+    display: block;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.academic-row-main p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.academic-row-main p em {
+    font-style: italic;
+}
+
+.academic-row-contact {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 280px;
+}
+
+.contact-item {
+    font-size: 0.9rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .academic-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
