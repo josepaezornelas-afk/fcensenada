@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Facultad de Ciencias</title>
+    <title>Recursos - Facultad de Ciencias</title>
     <link rel="icon" href="../assets/img/fcloog.png">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../student-menu.css">
@@ -88,16 +88,16 @@
                             <a href="../alumnos/index.html#seguro" class="dropdown-item">Seguro Facultativo</a>
                         </div>
                     </div>
-                    <div class="nav-item">
-                        <a href="../recursos/index.html" class="nav-link">Recursos</a>
+                    <div class="nav-item active">
+                        <a href="index.html" class="nav-link">Recursos</a>
                         <div class="dropdown-menu">
-                            <a href="../index.html#recursos" class="dropdown-item">Manuales de Laboratorio</a>
-                            <a href="../index.html#recursos" class="dropdown-item">Libros Publicados</a>
-                            <a href="../index.html#recursos" class="dropdown-item">Reglamentos</a>
+                            <a href="index.html#manuales" class="dropdown-item">Manuales de Laboratorio</a>
+                            <a href="index.html#libros" class="dropdown-item">Libros Publicados</a>
+                            <a href="index.html#normatividad" class="dropdown-item">Reglamentos</a>
                         </div>
                     </div>
-                    <div class="nav-item active">
-                        <a href="./index.html" class="nav-link">Servicios</a>
+                    <div class="nav-item">
+                        <a href="../servicios/index.html" class="nav-link">Servicios</a>
                         <div class="dropdown-menu">
                             <a href="index.html#visitas" class="dropdown-item">Visitas</a>
                             <a href="index.html#prestacion" class="dropdown-item">Prestación de Servicios</a>
@@ -114,9 +114,9 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-header-title">Servicios Facultativos</h1>
+            <h1 class="page-header-title">Recursos Facultativos</h1>
             <div class="breadcrumbs">
-                <a href="../index.html">Inicio</a> &gt; <a href="index.html">Servicios</a>
+                <a href="../index.html">Inicio</a> &gt; <a href="index.html">Recursos</a>
             </div>
         </div>
     </section>
@@ -126,29 +126,29 @@
         <div class="container">
             <div class="page-grid" style="grid-template-columns: 1fr 3fr;">
 
-                <!-- Sidebar Menu (FIAD Style) -->
+                <!-- Sidebar Menu -->
                 <aside class="sidebar" style="top: 2rem;">
                     <h3
                         style="font-family: var(--font-title); color: var(--primary-dark); margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem;">
-                        Servicios</h3>
+                        Recursos</h3>
 
                     <div class="student-menu" id="servicesMenu">
-                        <div class="student-menu-item active" data-target="visitas">
-                            Visitas Guiadas
+                        <div class="student-menu-item active" data-target="manuales">
+                            Manuales de Laboratorio
                             <svg viewBox="0 0 24 24">
                                 <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <div class="student-menu-item" data-target="prestacion">
-                            Prestación de Servicios
+                        <div class="student-menu-item" data-target="libros">
+                            Libros Digitales
                             <svg viewBox="0 0 24 24">
                                 <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <div class="student-menu-item" data-target="educacion">
-                            Educación Continua
+                        <div class="student-menu-item" data-target="normatividad">
+                            Normatividad y Tutorías
                             <svg viewBox="0 0 24 24">
                                 <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -160,131 +160,105 @@
                 <!-- Main Content Area -->
                 <main class="page-main">
 
-                    <!-- Content: Visitas -->
-                    <div class="service-content active" id="visitas">
+                    <!-- Content: Manuales -->
+                    <div class="service-content active" id="manuales">
                         <div class="service-header">
-                            <h2>Visitas Guiadas</h2>
-                            <p>Conoce nuestras instalaciones y descubre el mundo de las ciencias.</p>
+                            <h2>Manuales de Laboratorio</h2>
+                            <p>Accede a las guías de práctica de laboratorio oficiales de materias de Biología y
+                                Ciencias Computacionales.</p>
                         </div>
 
-                        <p style="margin-bottom: 2rem;">La Facultad de Ciencias abre sus puertas a preparatorias,
-                            secundarias y público en general interesado en conocer nuestros laboratorios, áreas de
-                            investigación y la vida universitaria. Selecciona el paquete que mejor se adapte a tu grupo.
-                        </p>
+                        <p style="margin-bottom: 2rem;">La Facultad de Ciencias provee estos manuales como material de
+                            apoyo indispensable para el desarrollo de tus prácticas de laboratorio. Asegúrate de
+                            descargar y leer la práctica correspondiente antes de tu sesión.</p>
+
+                        <div class="stages-grid" style="grid-template-columns: 1fr;">
+                            <div class="stage-card" style="border-left: 4px solid var(--primary-color);">
+                                <h3>Área de Biología</h3>
+                                <ul class="stage-list" style="margin-bottom: 1.5rem;">
+                                    <li><a href="#" class="news-link">Manual de Biología Celular (PDF)</a></li>
+                                    <li><a href="#" class="news-link">Manual de Morfología y Anatomía (PDF)</a></li>
+                                    <li><a href="#" class="news-link">Manual de Ecología General (PDF)</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="stage-card" style="border-left: 4px solid var(--accent-color);">
+                                <h3>Área de Ciencias Computacionales</h3>
+                                <ul class="stage-list" style="margin-bottom: 1.5rem;">
+                                    <li><a href="#" class="news-link">Manual de Diseño de Algoritmos (PDF)</a></li>
+                                    <li><a href="#" class="news-link">Manual de Prácticas de Robótica (PDF)</a></li>
+                                    <li><a href="#" class="news-link">Guía de Laboratorio de Redes (PDF)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content: Libros -->
+                    <div class="service-content" id="libros">
+                        <div class="service-header">
+                            <h2>Libros Digitales</h2>
+                            <p>Colección de libros y catálogos de investigación publicados por académicos de la Facultad
+                                de Ciencias.</p>
+                        </div>
 
                         <div class="stages-grid">
-                            <!-- Paquete 1 -->
-                            <div class="stage-card" style="border-top: 4px solid var(--primary-color);">
-                                <h3>Paquete Básico (2 hrs)</h3>
-                                <p>Ideal para grupos con tiempo limitado que desean una visión general.</p>
-                                <ul class="stage-list" style="margin-bottom: 1.5rem;">
-                                    <li>Recorrido guiado por instalaciones principales</li>
-                                    <li>Plática introductoria sobre las carreras</li>
-                                    <li>Visita a 1 laboratorio demostrativo</li>
-                                </ul>
-                                <a href="#" class="btn-text">Solicitar Paquete →</a>
+                            <div class="stage-card">
+                                <h3>Catálogo de Humedales de B.C.</h3>
+                                <p>Una recopilación exhaustiva de los ecosistemas de humedales en Baja California, su
+                                    flora, fauna y estado de conservación.</p>
+                                <a href="https://ciencias.ens.uabc.mx/documentos/libros/LibroHumedales.pdf"
+                                    target="_blank" class="btn-text" style="margin-top: 1rem;">Descargar PDF →</a>
                             </div>
 
-                            <!-- Paquete 2 -->
-                            <div class="stage-card" style="border-top: 4px solid var(--accent-color);">
-                                <h3>Paquete Intermedio (4 hrs)</h3>
-                                <p>Recomendado para estudiantes de preparatoria en proceso de orientación vocacional.
-                                </p>
-                                <ul class="stage-list" style="margin-bottom: 1.5rem;">
-                                    <li>Recorrido guiado completo</li>
-                                    <li>Interacción con profesores investigadores</li>
-                                    <li>Visita a 2 laboratorios con experimentos</li>
-                                    <li>Sesión de preguntas y respuestas</li>
-                                </ul>
-                                <a href="#" class="btn-text" style="color: var(--accent-color);">Solicitar Paquete →</a>
+                            <div class="stage-card">
+                                <h3>Manejo de Dunas Costeras</h3>
+                                <p>Estrategias y estudios científicos sobre la dinámica y conservación de las dunas
+                                    costeras en la región.</p>
+                                <a href="https://ciencias.ens.uabc.mx/documentos/libros/LibroDunasCosteras.pdf"
+                                    target="_blank" class="btn-text" style="margin-top: 1rem;">Descargar PDF →</a>
                             </div>
 
-                            <!-- Paquete 3 -->
-                            <div class="stage-card" style="border-top: 4px solid var(--primary-dark);">
-                                <h3>Paquete Inmersión (1 Día)</h3>
-                                <p>Una experiencia universitaria completa para grupos selectos.</p>
-                                <ul class="stage-list" style="margin-bottom: 1.5rem;">
-                                    <li>Recorrido extenso por el campus y bibliotecas</li>
-                                    <li>Visita a 4 laboratorios (Biología, Física, Mate, Computación)</li>
-                                    <li>Prácticas hands-on en laboratorio</li>
-                                    <li>Comida en cafetería universitaria</li>
-                                </ul>
-                                <a href="#" class="btn-text" style="color: var(--primary-dark);">Solicitar Paquete →</a>
+                            <div class="stage-card">
+                                <h3>El Valle de Guadalupe</h3>
+                                <p>Análisis ecológico y ambiental de una de las zonas vitivinícolas más importantes del
+                                    país.</p>
+                                <a href="https://ciencias.ens.uabc.mx/documentos/libros/LibroValleGuadalupe.pdf"
+                                    target="_blank" class="btn-text" style="margin-top: 1rem;">Descargar PDF →</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Content: Prestación de Servicios -->
-                    <div class="service-content" id="prestacion">
+                    <!-- Content: Normatividad -->
+                    <div class="service-content" id="normatividad">
                         <div class="service-header">
-                            <h2>Prestación de Servicios Profesionales</h2>
-                            <p>Soluciones tecnológicas y científicas para la industria y sociedad.</p>
-                        </div>
-                        <div class="stage-card" style="margin-bottom: 2rem;">
-                            <p>A través de nuestros laboratorios e investigadores altamente capacitados, ofrecemos
-                                servicios de consultoría, análisis y desarrollo de proyectos para empresas,
-                                instituciones gubernamentales y particulares.</p>
+                            <h2>Normatividad y Tutorías</h2>
+                            <p>Conoce los reglamentos internos de laboratorio y las guías del programa institucional de
+                                tutorías escolares.</p>
                         </div>
 
-                        <h3>Áreas de Servicio</h3>
-                        <br>
-                        <ul class="stage-list">
-                            <li><strong>Estudios de Impacto Ambiental:</strong> Evaluaciones ecológicas, monitoreo de
-                                flora y fauna, calidad de agua y suelo.</li>
-                            <li><strong>Desarrollo de Software:</strong> Sistemas a la medida, bases de datos y
-                                soluciones web para PyMES.</li>
-                            <li><strong>Análisis Estadístico y Ciencia de Datos:</strong> Modelado predictivo,
-                                optimización de procesos y auditoría de datos.</li>
-                            <li><strong>Metrología y Calibración:</strong> Mediciones físicas de alta precisión.</li>
-                        </ul>
-
-                        <div
-                            style="margin-top: 2.5rem; padding: 1.5rem; background-color: var(--bg-light); border-radius: var(--border-radius); border: 1px solid var(--border-color);">
-                            <h4
-                                style="font-family: var(--font-title); color: var(--primary-dark); margin-bottom: 0.5rem;">
-                                Contacto de Vinculación</h4>
-                            <p style="font-size: 0.9rem;">Para cotizaciones y requerimientos específicos, comuníquese a
-                                la Coordinación de Extensión y Vinculación.</p>
-                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">📧 vinculacion.fc@uabc.edu.mx | 📞 +52
-                                (646) 152 8211 Ext. 64910</p>
-                        </div>
-                    </div>
-
-                    <!-- Content: Educación Continua -->
-                    <div class="service-content" id="educacion">
-                        <div class="service-header">
-                            <h2>Educación Continua</h2>
-                            <p>Diplomados, cursos y talleres para profesionales.</p>
-                        </div>
-                        <p style="margin-bottom: 2rem;">Mantente actualizado con nuestra oferta de programas de
-                            formación continua impartidos por expertos en sus disciplinas.</p>
+                        <p style="margin-bottom: 2rem;">Es responsabilidad de toda la comunidad estudiantil conocer y
+                            acatar los reglamentos vigentes, así como aprovechar el programa de tutorías para su
+                            desarrollo académico.</p>
 
                         <div class="stages-grid" style="grid-template-columns: 1fr;">
                             <div class="stage-card">
-                                <h3>Diplomado en Ciencia de Datos con Python</h3>
-                                <p>Aprende a extraer, analizar y visualizar datos utilizando las librerías más modernas
-                                    de Python (Pandas, Scikit-learn, TensorFlow).</p>
-                                <div style="display: flex; gap: 1rem; margin-top: 1rem; align-items: center;">
-                                    <span
-                                        style="font-size: 0.8rem; background-color: var(--primary-color); color: white; padding: 0.2rem 0.6rem; border-radius: 4px;">Duración:
-                                        120 hrs</span>
-                                    <span
-                                        style="font-size: 0.8rem; background-color: var(--bg-light); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 4px;">Modalidad:
-                                        Híbrida</span>
-                                </div>
+                                <h3>Programa Institucional de Tutorías</h3>
+                                <p>Guía oficial sobre el funcionamiento del programa de tutorías, derechos y
+                                    obligaciones de tutores y tutorados.</p>
+                                <a href="https://ciencias.ens.uabc.mx/documentos/reglamentos/MANUALDETUTORIAS-FC_20190906.pdf"
+                                    target="_blank" class="btn-text" style="margin-top: 1rem;">Descargar Manual de
+                                    Tutorías UABC (PDF) →</a>
                             </div>
 
                             <div class="stage-card">
-                                <h3>Taller de Sistemas de Información Geográfica (SIG)</h3>
-                                <p>Aplicación de QGIS y ArcGIS para el análisis espacial y monitoreo ambiental.</p>
-                                <div style="display: flex; gap: 1rem; margin-top: 1rem; align-items: center;">
-                                    <span
-                                        style="font-size: 0.8rem; background-color: var(--primary-color); color: white; padding: 0.2rem 0.6rem; border-radius: 4px;">Duración:
-                                        40 hrs</span>
-                                    <span
-                                        style="font-size: 0.8rem; background-color: var(--bg-light); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 4px;">Modalidad:
-                                        Presencial</span>
-                                </div>
+                                <h3>Reglamentos de Laboratorio</h3>
+                                <p>Políticas de uso, normas de seguridad y lineamientos para el trabajo en los
+                                    diferentes laboratorios de la Facultad.</p>
+                                <ul class="stage-list" style="margin-top: 1rem; margin-bottom: 1.5rem;">
+                                    <li><a href="#" class="news-link">Políticas de Laboratorio de Cómputo (PDF)</a></li>
+                                    <li><a href="#" class="news-link">Reglamento Interno de Laboratorios de Biología y
+                                            Física (PDF)</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
