@@ -458,6 +458,154 @@ ul {
     background-color: var(--accent-color);
 }
 
+/* Cards de investigadores*/
+.academic-card-pro {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr) 220px;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.7rem;
+    min-height: 180px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #dde5ee;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
+}
+
+.academic-card-pro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-color);
+}
+
+.academic-photo {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    min-height: 110px;
+    max-width: 110px;
+    max-height: 110px;
+    border-radius: 16px;
+    background: #f3f6f9;
+    border: 1px solid #e0e7ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+    flex-shrink: 0;
+}
+
+.academic-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.academic-info {
+    min-width: 0;
+}
+
+.academic-info h3 {
+    margin: 0.35rem 0 0.25rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.academic-info h3 a {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.academic-info h3 a:hover {
+    color: var(--accent-color);
+}
+
+.academic-tag {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    background: rgba(0, 100, 60, 0.08);
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+}
+
+.academic-position {
+    margin: 0.35rem 0 0;
+    font-weight: 700;
+    color: #26364a;
+}
+
+.academic-lines {
+    margin-top: 0.9rem;
+    color: #536173;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    font-style: italic;
+}
+
+.academic-contact-pro {
+    min-width: 220px;
+    border-left: 1px solid #e1e8f0;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.academic-contact-link {
+    color: #26364a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+.academic-contact-link span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+}
+
+.academic-contact-link:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 900px) {
+    .academic-card-pro {
+        grid-template-columns: 90px 1fr;
+        gap: 1.25rem;
+        align-items: start;
+    }
+
+    .academic-photo {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+        min-height: 90px;
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .academic-contact-pro {
+        grid-column: 1 / -1;
+        min-width: 0;
+        border-left: none;
+        border-top: 1px solid #e1e8f0;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+}
+
 /* Program Highlight Section (Enrolment Boost) */
 .section-programs {
     padding: 5rem 0;
@@ -1492,4 +1640,5 @@ ul {
     .brand-text p {
         font-size: 0.75rem;
     }
+
 }
